@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-java-debug",
+    "vscjava.vscode-java-test",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-dependency",
+    "visualstudioexptteam.vscodeintellicode",
+    "spring-projects.vscode-spring-boot",
+    "vscjava.vscode-spring-initializr",
+    "vscjava.vscode-spring-boot-dashboard",
+    "sonarsource.sonarlint-vscode",
+    "CucumberOpen.cucumber-official",
+    "redhat.java",
+    "redhat.vscode-yaml",
+  ]
+}
