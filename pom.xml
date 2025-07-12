@@ -263,8 +263,6 @@
         <artifactId>maven-pmd-plugin</artifactId>
         <version>${pmd-maven-plugin.version}</version>
         <configuration>
-          <linkXref>true</linkXref>
-          <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
           <minimumTokens>100</minimumTokens>
           <targetJdk>${java.version}</targetJdk>
           <failOnViolation>false</failOnViolation>
