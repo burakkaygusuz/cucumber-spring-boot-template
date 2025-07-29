@@ -24,7 +24,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- Dependency versions -->
-    <cucumber.version>7.26.0</cucumber.version>
+    <cucumber.version>7.27.0</cucumber.version>
     <testng.version>7.11.0</testng.version>
     <assertj.version>4.0.0-M1</assertj.version>
     <jackson.version>2.19.2</jackson.version>
