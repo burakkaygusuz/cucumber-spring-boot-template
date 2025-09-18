@@ -27,7 +27,7 @@
     <cucumber.version>7.27.0</cucumber.version>
     <testng.version>7.11.0</testng.version>
     <assertj.version>4.0.0-M1</assertj.version>
-    <jackson.version>2.19.2</jackson.version>
+    <jackson.version>2.20.0</jackson.version>
     <log4j2.version>2.25.1</log4j2.version>
     <allure.version>2.29.1</allure.version>
     <allure-maven.version>2.15.2</allure-maven.version>
