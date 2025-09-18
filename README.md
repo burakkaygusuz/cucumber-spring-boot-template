@@ -43,12 +43,14 @@ cucumber-spring-boot-template/
 ## 📦 Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/burakkaygusuz/cucumber-spring-boot-template.git
    cd cucumber-spring-boot-template
    ```
 
 2. **Install dependencies:**
+
    ```bash
    mvn clean install
    ```
@@ -58,6 +60,7 @@ cucumber-spring-boot-template/
 ## 🏃‍♂️ Running Tests
 
 ### Running Tests with Maven
+
 ```bash
 # Run all tests
 mvn test
@@ -70,12 +73,14 @@ mvn test -Ddataproviderthreadcount=4
 ```
 
 ### Running Tests from IDE
+
 - Run `TestRunner.java` file
 - Or run `testng.xml` file
 
 ## 📊 Test Reports
 
 ### Allure Reports
+
 ```bash
 # Generate Allure report
 mvn allure:report
@@ -89,6 +94,7 @@ Reports are generated in `target/allure-report/` directory.
 ## 🎯 Writing Test Scenarios
 
 ### 1. Creating Feature Files
+
 Add `.feature` files to `src/test/resources/features/` directory:
 
 ```gherkin
@@ -99,6 +105,7 @@ Feature: Placeholder Feature
 ```
 
 ### 2. Creating Step Definitions
+
 Add step definitions to `src/test/java/.../steps/` directory:
 
 ```java
@@ -116,6 +123,7 @@ public class PlaceholderSteps {
 ## 🔧 Configuration
 
 ### TestNG Configuration
+
 Configure test suite settings in `testng.xml`:
 
 ```xml
@@ -129,6 +137,7 @@ Configure test suite settings in `testng.xml`:
 ```
 
 ### Cucumber Configuration
+
 Configure Cucumber settings in `TestRunner.java`:
 
 ```java
@@ -147,24 +156,26 @@ Configure Cucumber settings in `TestRunner.java`:
 
 ## 🎨 Code Formatting
 
-The project uses Google Java Format:
+The project uses Spotless (Eclipse JDT):
 
 ```bash
-# Check code format
-mvn com.spotify.fmt:fmt-maven-plugin:check
+# Check formatting
+mvn spotless:check
 
-# Format code
-mvn com.spotify.fmt:fmt-maven-plugin:format
+# Apply formatting
+mvn spotless:apply
 ```
 
 ## 🚀 Advanced Features
 
 ### 1. Parallel Test Execution
+
 ```bash
 mvn test -Ddataproviderthreadcount=4
 ```
 
 ### 2. Test Filtering with Tags
+
 ```bash
 # Note: Add tags to your feature files first
 mvn test -Dcucumber.filter.tags="@smoke and not @wip"
@@ -174,6 +185,7 @@ mvn test
 ```
 
 ### 3. Environment Variables
+
 ```bash
 mvn test -Dspring.profiles.active=test -Dapi.base.url=https://api.example.com
 ```
@@ -181,16 +193,19 @@ mvn test -Dspring.profiles.active=test -Dapi.base.url=https://api.example.com
 ## 📝 Best Practices
 
 ### 1. Test Organization
+
 - Keep feature files organized by functionality
 - Use meaningful scenario names
 - Group related steps in the same step definition class
 
 ### 2. Test Data Management
+
 - Use external data sources (JSON, CSV, YAML)
 - Implement data builders for test objects
 - Use parameterized tests for data-driven testing
 
 ### 3. Test Maintenance
+
 - Follow Page Object Model for UI tests
 - Use proper assertion messages
 - Implement proper error handling
@@ -198,6 +213,7 @@ mvn test -Dspring.profiles.active=test -Dapi.base.url=https://api.example.com
 ## 🧪 Current Template Status
 
 This template currently includes:
+
 - ✅ **Basic Cucumber BDD structure** with Spring Boot integration
 - ✅ **TestNG test runner** with parallel execution support
 - ✅ **Allure reporting** integration
@@ -206,6 +222,7 @@ This template currently includes:
 ### Extending the Template
 
 This template can be extended for:
+
 - **REST API Testing** - Add REST Assured or WebTestClient
 - **Web UI Testing** - Add Selenium WebDriver dependencies
 - **Mobile Testing** - Add Appium dependencies
@@ -217,6 +234,7 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Burak Kaygusuz**
+
 - GitHub: [@burakkaygusuz](https://github.com/burakkaygusuz)
 - LinkedIn: [burakkaygusuz](https://linkedin.com/in/burakkaygusuz)
 
